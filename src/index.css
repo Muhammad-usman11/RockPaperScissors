@@ -1,0 +1,169 @@
+
+.pagewidth{
+  max-width: 1280px;
+  margin: auto;
+  width: 90%;
+}
+body{
+  background-color: rgb(137, 137, 230);
+}
+.box h1{
+  
+  font-size: 63px;
+  border-bottom: 1px solid;
+padding-bottom: 25px;
+max-width: 700px;
+margin: auto;
+}
+.box{
+  
+padding: 50px 0px;
+color: white;
+}
+
+.scoreparent{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 110px;
+}
+.scorebox{
+  color: white;
+background: rgb(82, 80, 80);
+padding: 5px 80px;
+border: none;
+}
+.countbox{
+  color: black;
+background: white;
+padding: 5px 80px;
+border: none;
+}
+.selectbox{
+  background: white;
+  min-height: 190px;
+  text-align: center;
+  border: none;
+  margin-top: 20px;
+}
+.iconmargin{
+  padding-top: 4rem;
+}
+.handshakemargin{
+  padding-top: 8rem;
+  
+}
+.blacktext{
+  color: black !important;
+}
+.playbtn{
+  text-align: center;
+  margin-top: 50px;
+}
+.playbtn button{
+  padding: 15px 35px;
+border: none;
+color: black;
+border-radius: 6px;
+background: white;
+cursor: pointer;
+}
+.slectoricons{
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 300px;
+margin: auto;
+margin-top: 70px;
+}
+.handbtn{
+  background: transparent;
+border: none;
+cursor: pointer;
+opacity: 0.6;
+}
+.handbtn:hover{
+  
+  transition: 0.3s;
+  rotate: 10deg;
+}
+.text{
+  color: white;
+font-size: 20px;
+margin-bottom: 15px;
+}
+.activebtn{
+  opacity: 2;
+  color: white;
+}
+.timertext{
+  color: white;
+  font-size: 60px;
+}
+.reswinner{
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 27px;
+  margin-bottom: 0px;
+}
+.resmessage{
+  text-align: center;
+  color: white;
+  font-size: 19px;
+}
+
+.playerhandshake{
+  animation: playerShakeAnimation 0.8s ease-in-out infinite ;
+  
+}
+
+.computerhandshake{
+  animation: computerShakeAnimation 0.8s ease-in-out infinite ;
+}
+
+
+@keyframes playerShakeAnimation{
+  0%,
+  100% {
+    transform: rotate(100deg) ;
+  }
+  50% {
+    transform: rotate(80deg) ;
+  }
+}
+
+@keyframes computerShakeAnimation{
+  0%,
+  100% {
+    transform: scaleY(-1) rotate(-80deg) ;
+  }
+  50% {
+    transform: scaleY(-1) rotate(-100deg) ;
+  }
+}
+
+.winneranimation{
+  animation: winner 2s ease-in-out ;
+}
+
+@keyframes winner{
+  30%{
+    transform: scale(1.2);
+  }
+  40%,
+  60%{
+    transform: rotate(-20deg) scale(1.1);
+  }
+  50%{
+    transform: rotate(20deg) scale(1.1);
+  }
+  70%{
+    transform: rotate(0deg) scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+
